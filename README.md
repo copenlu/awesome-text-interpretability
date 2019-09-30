@@ -1,10 +1,11 @@
 Interpretability in NLP
 
 # On interpretability
-[The mithos of model interpretability](https://arxiv.org/pdf/1606.03490.pdf)
+[The mythos of model interpretability](https://arxiv.org/pdf/1606.03490.pdf)
 
 # Evaluation of interpretability techniques
-* [Manipulating and Measuring Model Interpretability](https://arxiv.org/pdf/1811.00196.pdf) 
+* [Manipulating and Measuring Model Interpretability](https://arxiv.org/pdf/1811.00196.pdf) The authors examine how number of features and transparency of model influence the model interpretability. They found that a smaller model was easier for simulation. However, showing a simpler model did not help the annotators to correct the model's behavior or identify wrong decisions. 
+
 * [Human-grounded Evaluations of Explanation Methods for Text Classification, EMNLP 2019](https://arxiv.org/pdf/1908.11355.pdf) The authors  design three tasks, where humans evaluate the following explanation techniques: LIME, LRP, DeepLIFT, Grad-CAM-Text and Decision Trees (for words and n-grams). They find that LIME is the most class-discriminative approach. Unfortunately, the annotator agreement is considerably low in most tasks and one general improvement would be to provide the words and n-grams together with the context they appear in. 
 
 # Interpretability Techniques
