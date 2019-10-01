@@ -3,6 +3,8 @@ Interpretability in NLP
 # On interpretability
 [The mythos of model interpretability](https://arxiv.org/pdf/1606.03490.pdf)
 
+[Pathologies of Neural Models Make Interpretations Difficult](https://arxiv.org/pdf/1804.07781.pdf)
+
 # Evaluation of interpretability techniques
 * [Manipulating and Measuring Model Interpretability](https://arxiv.org/pdf/1811.00196.pdf) The authors examine how number of features and transparency of model influence the model interpretability. They found that a smaller model was easier for simulation. However, showing a simpler model did not help the annotators to correct the model's behavior or identify wrong decisions. 
 
