@@ -18,8 +18,15 @@ Interpretability in NLP
 # Datasets with annotated explanations
 
 ## Highlights
+* e-SNLI [e-SNLI: Natural Language Inference with Natural Language Explanations](https://arxiv.org/pdf/1812.01193.pdf)
+* CoS-E [Explain Yourself! Leveraging Language Models for Commonsense Reasoning](https://arxiv.org/pdf/1906.02361.pdf)
+* BeerAdvocate [Rationalizing Neural Predictions](https://arxiv.org/pdf/1606.04155.pdf)
+* BabbleLabble [Training Classifiers with Natural Language Explanations](https://arxiv.org/pdf/1805.03818.pdf)
 
 ## Textual explanations
+* e-SNLI [e-SNLI: Natural Language Inference with Natural Language Explanations](https://arxiv.org/pdf/1812.01193.pdf)
+* LIAR-PLUS [Where is your Evidence: Improving Fact-checking by Justification Modeling](https://www.aclweb.org/anthology/W18-5513.pdf)
+* CoS-E [Explain Yourself! Leveraging Language Models for Commonsense Reasoning](https://arxiv.org/pdf/1906.02361.pdf)
 
 # Models
 
