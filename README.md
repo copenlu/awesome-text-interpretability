@@ -17,6 +17,10 @@ Interpretability in NLP
 * [Towards a Deep and Unified Understanding of Deep Neural Models in NLP, ICML 2019](https://www.microsoft.com/en-us/research/uploads/prod/2019/05/camera_paper_with_supp_3.pdf) Provide a technique to show how word saliency develops through all of the layers until the final output. The authors compare their approach to LRP, perturbations and gradients. They also provide a comparison between explanations from BERT, Transformer, LSTM, CNN.
 * [Towards Explainable NLP: A Generative Explanation Framework for Text Classification, ACL 2019](https://arxiv.org/pdf/1811.00196.pdf)
 
+# Explainability Techniques
+* [Explainable Fact Checking with Probabilistic Answer Set Programming, TTO 2019](https://truthandtrustonline.files.wordpress.com/2019/09/paper_15.pdf) - Retrieve tripes from knowledge graphs and combine them using rules to produce explanations for fact checking
+
+
 # Datasets with annotated explanations
 
 ## Highlights
