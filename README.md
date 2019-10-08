@@ -4,6 +4,7 @@ Interpretability in NLP
 [The mythos of model interpretability](https://arxiv.org/pdf/1606.03490.pdf)
 
 [Pathologies of Neural Models Make Interpretations Difficult](https://arxiv.org/pdf/1804.07781.pdf)
+The authors, using the technique of input reduction, searches for the largest reduction of words in the input, which still produces the same prediction. Human annotators find the saliency of the reduced as bad as random.  THe authors suggest that the model pathologies are due to model overconfidence or **second order sensitivity**. They address the firs issue by training a classifier to be less certain about examples with reduced number of words. The second problem is interesting and understudied. There are only some indicators of the second order sensitivity, which in essense is common among interpretability techniques and occurse when slightly changing the heatmap of the input, which changes immensely the prediction of the interpretability technique. It would be interesting to study more which are the more stable interpretability techniques.
 
 # Evaluation of interpretability techniques
 * [Manipulating and Measuring Model Interpretability](https://arxiv.org/pdf/1811.00196.pdf) The authors examine how number of features and transparency of model influence the model interpretability. They found that a smaller model was easier for simulation. However, showing a simpler model did not help the annotators to correct the model's behavior or identify wrong decisions. 
