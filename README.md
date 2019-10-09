@@ -13,6 +13,10 @@ The authors, using the technique of input reduction, searches for the largest re
 
 * [Analysis Methods in Neural Language Processing: A Survey, TACL 2019](https://arxiv.org/pdf/1812.08951.pdf)
 
+* [Interpretation of Neural Networks is Fragile](https://arxiv.org/pdf/1710.10547.pdf)
+The authors devise adversarial attacks with different types of perturbations, which do not change the prediction or the confidence scores of the model, but change the explanation with a lot. This, however does not mean that the components that the different interpretation techniques use did not change. It might be a good idea to measure the change of the model's weights change, not only the confidence, because the model might pick up other words and still be confident (pathologies in neural networks). The most robust method turned to be the integrated gradients. The analysis is for images.
+
+
 # Interpretability Techniques
 * [Hierarchical interpretations for neural network predictions, ICLR 2019](https://openreview.net/forum?id=SkEqro0ctQ) - Provide a hierarchical visualisation of how words contribute to phrases and how phrases contribute to bigger piesces of text and eventually to the overall prediction.
 * [Towards a Deep and Unified Understanding of Deep Neural Models in NLP, ICML 2019](https://www.microsoft.com/en-us/research/uploads/prod/2019/05/camera_paper_with_supp_3.pdf) Provide a technique to show how word saliency develops through all of the layers until the final output. The authors compare their approach to LRP, perturbations and gradients. They also provide a comparison between explanations from BERT, Transformer, LSTM, CNN.
