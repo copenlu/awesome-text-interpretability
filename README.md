@@ -1,6 +1,5 @@
-Interpretability in NLP
+# Opinion Papers
 
-# On interpretability
 [The mythos of model interpretability](https://arxiv.org/pdf/1606.03490.pdf)
 
 [Pathologies of Neural Models Make Interpretations Difficult](https://arxiv.org/pdf/1804.07781.pdf)
