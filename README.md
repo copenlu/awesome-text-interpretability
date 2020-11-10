@@ -13,6 +13,9 @@ Model pathologies are due to model over-confidence or **second order sensitivity
 ## Fact Checking
 * [Explainable Fact Checking with Probabilistic Answer Set Programming, TTO 2019](https://truthandtrustonline.files.wordpress.com/2019/09/paper_15.pdf) - Retrieve tripes from knowledge graphs and combine them using rules to produce explanations for fact checking
 
+## Machine Reaching Comprehension / Question Answering
+* [Learning to Explain: Datasets and Models for Identifying Valid Reasoning Chains in Multihop Question-Answering, EMNLP 2020](https://arxiv.org/abs/2010.03274) - 3 datasets and delexicalized chain representations in which repeated noun phrases are replaced by variables, thus turning them into generalized reasoning chains
+
 # Explainability Techniques
 
 ## Saliency maps
@@ -21,12 +24,19 @@ Model pathologies are due to model over-confidence or **second order sensitivity
 
 ## Generating Rationales 
 * [Towards Explainable NLP: A Generative Explanation Framework for Text Classification, ACL 2019](https://arxiv.org/pdf/1811.00196.pdf)
+* [Why do you think that? Exploring Faithful Sentence-Level Rationales Without Supervision, EMNLP 2020](https://arxiv.org/pdf/2010.03384.pdf ) - a differentiable training-framework to create models which output faithful rationales on a sentence level, by solely applying supervision on the target task; model solves the task based on each rationale individually and learns to assign high scores to those which solved the task best
+* [F1 is Not Enough! Models and Evaluation Towards User-Centered Explainable Question Answering](https://arxiv.org/pdf/2010.06283.pdf) - two novel evaluation scores: (i) tracks prediction changes when removing facts, (ii) assesses whether the answer is contained in the explanation or not; Further strengthen the coupling of answer and explanation prediction in the model architecture and during training
 
 # Improving Model Interpretability
-
-# Adversarial Attacks as Model Interpretations
+* [Learning Variational Word Masks to Improve the Interpretability of Neural Text Classifiers, EMNLP 2020](https://arxiv.org/pdf/2010.00667.pdf)  - variational word masks (VMASK) that are inserted into a neural text classifier, after the word embedding layer, and trained jointly with the model. VMASK learns to restrict the information of globally irrelevant or noisy wordlevel features flowing to subsequent network layers, hence forcing the model to focus on important features to make predictions
 
 ## Other
+* [Dataset Cartography: Mapping and Diagnosing Datasets with Training Dynamics. EMNLP 2020](https://arxiv.org/abs/2009.10795) - a model-based tool to characterize and diagnose datasets
+
+# Adversarial Attacks as Model Interpretations
+* [More Bang for Your Buck: Natural Perturbation for Robust Question Answering, EMNLP 2020](https://arxiv.org/abs/2004.04849)
+* [FIND: Human-in-the-Loop Debugging Deep Text Classifiers, EMNLP 2020](https://arxiv.org/abs/2010.04987)
+* [Beat the AI: Investigating Adversarial Human Annotation for Reading Comprehension(UCL group), EMNLP 2020](https://arxiv.org/pdf/2002.00293.pdf)
 
 # Evaluation
 * [Sanity Checks for Saliency Maps](https://arxiv.org/pdf/1810.03292.pdf) Authors propose *model parameter and label randomization* to estimate the invariance of the interpretability tools to the model and the data. They find that guided BackProb and Grad CAM are invariant to both.
@@ -41,15 +51,18 @@ Model pathologies are due to model over-confidence or **second order sensitivity
 The authors devise adversarial attacks with different types of perturbations, which do not change the prediction or the confidence scores of the model, but change the explanation with a lot. This, however does not mean that the components that the different interpretation techniques use did not change. It might be a good idea to measure the change of the model's weights change, not only the confidence, because the model might pick up other words and still be confident (pathologies in neural networks). The most robust method turned to be the integrated gradients. The analysis is for images.
 
 
-# Datasets with Annotated Human Rationales
+# Annotated Human Rationales and Datasets
+## On Human Rationales
+* [From Language to Language-ish: How Brain-Like is an LSTM's Representation of Nonsensical Language Stimuli?, EMNLP 2020](https://arxiv.org/pdf/2010.07435.pdf) - The syntactic signatures available in Sentence and Jabberwocky LSTM representations are similar, and can be predicted from either the Sentence or Jabberwocky EEG. From our results, we can infer which LSTM representations encode semantic and/or syntactic information. We confirm using syntactic and semantic probing tasks. Our results show that there are similarities between the way the brain and an LSTM represent stimuli from both the Sentence (within-distribution) and Jabberwocky (out-of-distribution) conditions.
+* [Evaluating and Characterizing Human Rationales, EMNLP 2020](https://arxiv.org/pdf/2010.04736.pdf) - An open question, however, is how human rationales fare with these automatic metrics - do not necessarily perform well- reveal irrelevance and redundancy. Our work leads to actionable suggestions for evaluating and characterizing rationales. 
 
-## Highlights
+## Datasets with Highlights
 * e-SNLI [e-SNLI: Natural Language Inference with Natural Language Explanations](https://arxiv.org/pdf/1812.01193.pdf)
 * CoS-E [Explain Yourself! Leveraging Language Models for Commonsense Reasoning](https://arxiv.org/pdf/1906.02361.pdf)
 * BeerAdvocate [Rationalizing Neural Predictions](https://arxiv.org/pdf/1606.04155.pdf)
 * BabbleLabble [Training Classifiers with Natural Language Explanations](https://arxiv.org/pdf/1805.03818.pdf)
 
-## Textual explanations
+## Datasets with Textual explanations
 * e-SNLI [e-SNLI: Natural Language Inference with Natural Language Explanations](https://arxiv.org/pdf/1812.01193.pdf)
 * LIAR-PLUS [Where is your Evidence: Improving Fact-checking by Justification Modeling](https://www.aclweb.org/anthology/W18-5513.pdf)
 * CoS-E [Explain Yourself! Leveraging Language Models for Commonsense Reasoning](https://arxiv.org/pdf/1906.02361.pdf)
