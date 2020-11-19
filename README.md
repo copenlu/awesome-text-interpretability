@@ -31,6 +31,7 @@ Model pathologies are due to model over-confidence or **second order sensitivity
 
 ## Other
 * [Dataset Cartography: Mapping and Diagnosing Datasets with Training Dynamics. EMNLP 2020](https://arxiv.org/abs/2009.10795) - a model-based tool to characterize and diagnose datasets
+* [How does this interaction affect me? Interpretable attribution for feature interactions, NeurlIPS 2020](https://arxiv.org/pdf/2006.10965.pdf) - propose an interaction attribution and detection framework called Archipelago; scalable in real-world settings; more interpretable explanations than comparable methods, which is important for analyzing the impact of interactions on predictions
 
 # Adversarial Attacks as Model Interpretations
 * [More Bang for Your Buck: Natural Perturbation for Robust Question Answering, EMNLP 2020](https://arxiv.org/abs/2004.04849)
